@@ -114,3 +114,20 @@ section.gallery {
         transform: translateY(100%);
     }
 }
+
+@media (width < 50em) {
+    section.gallery {
+        padding: 1.5rem;
+        
+        & .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        & figure {
+            width: 90%;
+        }
+    }
+}

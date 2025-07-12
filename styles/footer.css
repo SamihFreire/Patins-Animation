@@ -100,3 +100,17 @@ footer {
         }
     }
 }
+
+@media (width < 50em) {
+    footer {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-inline: 1.5rem;
+        padding-block: 3rem 1.5rem;
+
+        & nav {
+            flex-direction: column;
+            margin-block: 3rem;
+        }
+    }
+}
